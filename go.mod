@@ -5,7 +5,7 @@ go 1.23.0
 toolchain go1.24.4
 
 require (
-	github.com/resolute-sh/resolute v0.1.0-alpha
+	github.com/resolute-sh/resolute v0.4.0-alpha
 	go.temporal.io/sdk v1.29.1
 )
 
@@ -45,4 +45,5 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-replace github.com/resolute-sh/resolute => ../resolute
+// For local development, uncomment:
+// replace github.com/resolute-sh/resolute => ../resolute
