@@ -14,7 +14,8 @@ const (
 // Provider returns the Slack provider for registration.
 func Provider() core.Provider {
 	return core.NewProvider(ProviderName, ProviderVersion).
-		AddActivity("slack.SendMessage", SendMessageActivity)
+		AddActivity("slack.SendMessage", SendMessageActivity).
+		AddActivity("slack.NotifyReport", NotifyReportActivity)
 }
 
 // RegisterActivities registers all Slack activities with a Temporal worker.
